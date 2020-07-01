@@ -1,13 +1,577 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>Sheen & Shine</title>
+	<title>Sheen & Shine CSS</title>
+	
 </head>
 <body>
-    
+	
+	<div class="navbar">
+		<ul>
+			<li><h1 class="title">Sheen & Shine CSS Framework</h1></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#navbar">Navbar</a></li>
+			<li><a href="#headings">Headings</a></li>
+			<li><a href="#type">Type</a></li>
+			<li><a href="#forms">forms</a>
+			<li><a href="#footer">Footer</a></li>
+		</ul>
+		<ul>
+			<li><a href="link/to/your/framework/repo">GitHub</a></li>
+		</ul>
+	</div>
+
+  <div class="container">
+
+		<section id="headings">
+			<h1>Headings</h1>
+			<h1>H1 Heading</h1>
+			<h2>H2 Heading</h2>
+			<h3>H3 Heading</h3>
+			<h4>H4 Heading</h4>
+			<h5>H5 Heading</h5>
+			<h6>H6 Heading</h6>
+
+			<pre>
+				<code>
+&lt;h1&gt;Headings&lt;/h1&gt;
+&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section id="type">
+			<h1>Paragraph styles</h1>
+			<p>This is the <strong>strong tag</strong> in a paragraph. 
+				This is the <em>em tag in a paragraph</em>, elements such 
+				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an 
+				example of the <abbr>abbreviation tag.</abbr> You'd use
+				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
+				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
+			
+			<pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section id="forms">
+			<h2>Buttons</h2>
+						
+			<button>Primary</button>
+			<button class="Secondary">Secondary</button>
+			<button class="Success">Success</button>
+			<button class="Danger">Danger</button>
+			<button class="Warning">Warning</button>
+			<button class="Info">Info</button>
+			<button class="Light">Light</button>
+			<button class="Dark">Dark</button>
+
+			<pre>
+				<code>
+&lt;button&gt;Primary&lt;/button&gt;
+&lt;button class='Secondary'&gt;Secondary&lt;/button&gt;
+&lt;button class='Success'&gt;Success&lt;/button&gt;
+&lt;button class='Danger'&gt;Danger&lt;/button&gt;
+&lt;button class='Warning'&gt;Warning&lt;/button&gt;
+&lt;button class='Info'&gt;Info&lt;/button&gt;
+&lt;button class='Light'&gt;Light&lt;/button&gt;
+&lt;button class='Dark'&gt;Dark&lt;/button&gt;
+				</code>
+			</pre>
+
+			<p>This button has consequences. You might want to think twice before clicking.</p>
+			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
+			<p>
+<button 
+	style="--weight: bold; --background-color: #f85353;"
+>Delete</button>
+	<button 
+	style="--background-color: #6bc253;"
+>Go!</button>
+			</p>
+
+			<pre>
+				<code>
+&lt;button 
+	style=&quot;--weight: bold; 
+	--background-color: #f85353;&quot;
+&gt;Delete&lt;/button&gt;
+
+&lt;button 
+	style=&quot;--background-color: #6bc253;&quot;
+&gt;Go!&lt;/button&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section>
+			<h2>Links</h2>
+			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
+		</section>
+
+		<section>
+			<h2>Forms and controls</h2>
+			<form>
+				<label>
+					<span>Text:</span>
+					<input type="text" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Email:</span>
+					<input type="email" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Password:</span>
+					<input type="password" placeholder="What is your name?">
+				</label>
+
+				<label>
+					<span>Your comments</span>
+					<textarea placeholder="Your comment"></textarea>
+				</label>
+				
+				<input type="submit">
+				<!-- Switch with Click -->
+				<div>
+					<label id="switch-2" class="switch-2">
+						<input type="checkbox">
+						<div>
+							<div></div>
+						</div>
+					</label>
+					<span>Click Switch no JS</span>
+				</div>
+
+				<label class="control-checkbox">One
+					<input type="checkbox" checked="checked">
+					<span></span>
+				</label>
+			</form>
+		</section>
+
+
+
+		<section id="colors">
+			<h1>Colors</h1>
+			<div class="color-grid">
+				
+				<div style="background-color: var(--color-background)">--color-background</div>
+				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
+				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
+				
+				<div style="background-color: var(--color-light)">--color-light</div>
+				
+				<div style="background-color: var(--color-md-light)">--color-md-light</div>
+				
+				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
+				
+				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
+				
+				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
+				
+				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
+				
+				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
+				
+				<div style="background-color: var(--color-callout)">--color-callout</div>
+				<div style="background-color: var(--color-lightest)">--color-lightest</div>
+			</div>
+		</section>
+		
+		<section id="navbar">
+			<h1>Navbar</h1>
+			
+			<h2>Navbar 1</h2>
+			<p>A navbar with all elements on the left.</p>
+			<p>Use a single child under <code>div.navbar</code>.</p>
+
+			<div class="navbar">
+				<ul>
+					<li><h1 class="title">TITLE</h1></li>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre class="code-block">
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+
+
+
+			
+			<h2>Navbar 2</h2>
+			<p>A navbar with groups of elements on the left and the right.</p>
+			<p>Use two children under <code>div.navbar</code>.</p>
+			<div class="navbar">
+				<ul>
+					<li><h1 class="title">TITLE</h1></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+				</ul>
+				
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<pre class="code-block">
+					<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+			</div>
+			
+			<p>here is an alternative with the site title on the left and links on the right.</p>
+
+			<div class="navbar">
+				<ul>
+					<li><h1 class="title">TITLE</h1></li>
+				</ul>
+				
+				<ul>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+					<pre class="code-block">
+						<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+				
+
+
+			
+			<h2>Navbar 3</h2>
+			<p>With three children the second child will be centered. 
+				This example places the site title in the center.</p>
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Mission</a></li>
+				</ul>
+				
+				<ul>
+					<li><h1 class="title">TITLE</h1></li>
+				</ul>
+				
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+					<pre class="code-block">
+						<code>
+&lt;div class=&quot;navbar&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mission&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;h1 class=&quot;title&quot;&gt;TITLE&lt;/h1&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+
+
+		</section>
+		
+		
+		
+		<section id="footers">
+			<h2>Page Footer</h2>
+			<div class="page-footer">
+				<ul>
+					<li><h3>Column 1</h3></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+				
+				<ul>
+					<li><h3>Column 2</h3></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+				
+				<ul>
+					<li><h3>Column 3</h3></li>
+					<li><a>Item 1</a></li>
+					<li><a>Item 2</a></li>
+					<li><a>Item 3</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section>
+			<h3>Components</h3>
+			<p>Frmwrk CSS also includes some slideshow components. To use these include 
+				the JS files at the bottom of the body and use the markup as shown.</p>
+
+				<pre><code>
+... code sample needed ...
+				</code></pre>
+
+				<div>
+					<div style="margin:2em">
+						<frmwrk-slides time="5000">
+							<img src="./images/kitten-0.jpeg" width="259" height="194">
+							<img src="./images/kitten-1.jpeg" width="257" height="196">
+							<img src="./images/kitten-2.jpeg" width="259" height="194">
+							<img src="./images/kitten-3.jpeg" width="275" height="183">
+							<img src="./images/kitten-4.jpeg" width="275" height="183">
+							<img src="./images/kitten-5.jpeg" width="275" height="183">
+						</frmwrk-slides>
+					</div>
+					<div style="margin:2em">
+						<frmwrk-slides-2 time="5000" style="width:257px; height:183;">
+							<img src="./images/kitten-0.jpeg" width="259" height="194">
+							<img src="./images/kitten-1.jpeg" width="257" height="196">
+							<img src="./images/kitten-2.jpeg" width="259" height="194">
+							<img src="./images/kitten-3.jpeg" width="275" height="183">
+							<img src="./images/kitten-4.jpeg" width="275" height="183">
+							<img src="./images/kitten-5.jpeg" width="275" height="183">
+						</frmwrk-slides-2>
+					</div>
+					<div style="margin:2em">
+						<frmwrk-slides-2 time="5000" vertical style="width:257px; height:183;">
+							<img src="./images/kitten-0.jpeg" width="259" height="194">
+							<img src="./images/kitten-1.jpeg" width="257" height="196">
+							<img src="./images/kitten-2.jpeg" width="259" height="194">
+							<img src="./images/kitten-3.jpeg" width="275" height="183">
+							<img src="./images/kitten-4.jpeg" width="275" height="183">
+							<img src="./images/kitten-5.jpeg" width="275" height="183">
+						</frmwrk-slides-2>
+					</div>
+				</div>
+		</section>
+
+		<section>
+			<h3>Full Color Palette</h3>
+
+			<div class="">
+				<h1>SASS to CSS Custom Properties</h1>
+
+				<p>This example uses SASS to generate a range of colors defined 
+					as CSS Custom Properties. See: <code>lesson-06-example-2.scss</code>
+				</p>
+
+				<p>Define some colors</p>
+				<p>Look at the dictionary of colors at the top of 
+					<code>lesson-06-example-2.scss</code>. These are the base colors.
+				shown here. </p>
+  
+  <div class="swatch-container">
+    <div class="swatch" style="background-color: var(--color-gray-lighter-4)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-lighter-3)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-lighter-2)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-lighter-1)"></div>
+    <div class="swatch" style="background-color: var(--color-gray)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-darker-1)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-darker-2)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-darker-3)"></div>
+    <div class="swatch" style="background-color: var(--color-gray-darker-4)"></div>
+
+    <div class="swatch" style="background-color: var(--color-info)"></div>
+    <div class="swatch" style="background-color: var(--color-success)"></div>
+    <div class="swatch" style="background-color: var(--color-danger)"></div>
+    <div class="swatch" style="background-color: var(--color-callout)"></div>
+    <div class="swatch" style="background-color: var(--color-secondary)"></div>
+    <div class="swatch" style="background-color: var(--color-other)"></div>
+    <div class="swatch" style="background-color: var(--color-alternate)"></div>
+    <div class="swatch" style="background-color: var(--color-primary)"></div>
+    <div class="swatch" style="background-color: var(--color-gray)"></div>
+  </div>
+
+  <h2>Shade and tints</h2>
+  <p>Here are all of the colors define. Starting with the base color I lightened 
+    then darkened the colors to generate 4 lighter and 4 darker colors. I used 
+    SASS to do this work and had SASS output new Custom Property definitions. 
+	</p>
+			
+			<div class="swatch-container">
+				<div class="swatch" style="background-color: var(--color-info-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-info-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-info-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-info-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-info)"></div>
+				<div class="swatch" style="background-color: var(--color-info-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-info-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-info-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-info-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-success-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-success-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-success-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-success-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-success)"></div>
+				<div class="swatch" style="background-color: var(--color-success-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-success-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-success-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-success-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-danger-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-danger)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-danger-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-callout-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-callout)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-callout-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-secondary-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-secondary-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-other-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-other-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-other-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-other-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-other)"></div>
+				<div class="swatch" style="background-color: var(--color-other-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-other-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-other-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-other-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-alternate-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-alternate-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-gray-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-gray)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-gray-darker-4)"></div>
+
+				<div class="swatch" style="background-color: var(--color-primary-lighter-4)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-lighter-3)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-lighter-2)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-lighter-1)"></div>
+				<div class="swatch" style="background-color: var(--color-primary)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-darker-1)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-darker-2)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-darker-3)"></div>
+				<div class="swatch" style="background-color: var(--color-primary-darker-4)"></div>
+
+			</div>
+		</div>
+
+		</section>
+  </div>
+	<div class="page-footer">
+		<ul>
+			<li><h3>Content</h3></li>
+			<li><a href="#colors">Colors</a></li>
+			<li><a href="#navbar">Navbar</a></li>
+			<li><a href="#headings">Headings</a></li>
+			<li><a href="#type">Type</a></li>
+			<li><a href="#forms">forms</a></li>
+		</ul>
+		
+		<ul>
+			<li><h3>Resources</h3></li>
+			<li><a href="">CSS Tricks</a></li>
+			<li><a href="">CSS Tricks</a></li>
+		</ul>
+		
+		<ul>
+			<li><h3>Contact</h3></li>
+			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+		</ul>
+	</div>
+
+	<script src="./js/frmwrk-slides.js"></script>
+	<script src="./js/frmwrk-slides-2.js"></script>
 </body>
 </html>
