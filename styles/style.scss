@@ -53,6 +53,7 @@ body {
     color: rgba(0, 0, 0, 0.81);
     line-height: 2;
     letter-spacing: 1px;
+    margin: 0;
 }
 
 
@@ -63,6 +64,50 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+.display-1 {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+.display-2 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+.display-3 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+.display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+.display-5 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.display-6 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+  
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+.subheader {
+margin-top: 0.2rem;
+margin-bottom: 0.5rem;
+font-weight: normal;
+line-height: 1.4;
+color: #8a8a8a;
+}
+.lead {
+font-size: 125%;
+line-height: 1.6;
+}
 
 /*--------Color Grid ------------ */
 
@@ -241,12 +286,7 @@ a {
     transition: color .4 ease-out;
     font-size: 14pt;
 }
-// a:link {
-//     color: red;
-//     font-size: 22pt;
-//     text-decoration: none;  
-//     position: relative;
-// }
+
 
 a::after{
     border-radius: 1em;
@@ -258,14 +298,18 @@ a::after{
     left: 100%;
     transition: right .4s cubic-bezier(0, 0.5, 0, 1);
 }
-
+a:hover{
+    color: #457DFB;
+    text-decoration: none;
+}
 a:hover::after {
     right: 0;
     left: 0;
 }
 
 a:visited {
-    color: green;
+    color: rgb(128, 23, 128);
+    
    
 }
 
