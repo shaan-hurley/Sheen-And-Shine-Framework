@@ -1,0 +1,335 @@
+$primary-color: #008fc1;
+$primary-white: #FDFFFC;
+$primary-black: #000;
+$secondary-color: #757575;
+$sucess-color:#228B22;
+$danger-primary: #DC143C;
+$warning-primary: #caca15;
+$info-color: #00BFFF;
+$light-primary: #D3D3D3;
+$dark-primary: rgb(37, 37, 37);
+
+
+:root {
+    --color-background: #7AB4DC;
+    --color-foreground: #C8ECF8;
+    --color-dark: rgb(34, 50, 72);
+    --color-md-dark: rgb(51, 75, 108);
+    --color-light: #D3C1D2;
+    --color-md-light: rgb(164, 148, 163);
+    --color-primary: #008fc1;
+    --color-info: rgb(27, 183, 160);
+    --color-success: #228B22;
+    --color-danger: #DC143C;
+    --font-color-primary: #fff;
+    --color-callout: #FFBA08;
+    --color-lightest: #f556c7;
+    --size: 121px;
+    --base-font-size: 16px;
+    --large-font-size: 1.85em;
+    --number-of-columns: 4;
+    --golden-ratio: 1.618;
+    --background-color:#008fc1;
+    --weight: normal;
+    --primary-color: #008fc1;
+    --primary-color: #008fc1;
+    --primary-white: #FDFFFC;
+    --primary-black: #000;
+    --secondary-color: #757575;
+    --sucess-color:#228B22;
+    --danger-primary: #DC143C;
+    --warning-primary: #FFBA08;
+    --info-color: rgb(27, 183, 160);
+    --light-primary: #A0AF84;
+    --dark-primary: rgb(37, 37, 37);
+  }
+
+
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FDFFFC ;
+    font-size: 12pt;
+    color: rgba(0, 0, 0, 0.81);
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.81);
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+/*--------Color Grid ------------ */
+
+.container-color{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 40px;
+}
+
+.color-grid > div {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+.color-grid > div:hover {
+    box-shadow: 2px 2px #5e5d5d;
+}
+
+.color-grid-2 > div:hover {
+    box-shadow: 2px 2px #5e5d5d;
+}
+
+.color-grid-2 > div {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+
+/* -----------------Buttons-------------------------------- */
+button {
+    width: 100px;
+    padding: 10px;
+    font-size: 12.5pt;
+    font-weight: var(--weight);
+    border: 1px solid var(--light-primary);
+    background-color: var(--background-color);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+button:hover{
+    background-color: transparent;
+    border: 3px solid var(--background-color);
+    color: var(--background-color);
+}
+
+.Secondary {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+button:hover.Secondary{ 
+    background-color: transparent;
+    border: 3px solid $secondary-color;
+    color: $secondary-color;
+}
+
+.Success {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--sucess-color);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+
+button:hover.Success{ 
+    background-color: transparent;
+    border: 3px solid var(--sucess-color);
+    color: var(--sucess-color);
+}
+
+.Danger  {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--danger-primary);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+
+button:hover.Danger { 
+    background-color: transparent;
+    border: 3px solid var(--danger-primary);
+    color: var(--danger-primary);
+}
+
+.Warning {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--warning-primary);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+
+button:hover.Warning { 
+    background-color: transparent;
+    border: 3px solid var(--warning-primary);
+    color: var(--warning-primary);
+}
+
+.Info {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--info-color);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+
+button:hover.Info { 
+    background-color: transparent;
+    border: 3px solid var(--info-color);
+    color: var(--info-color);
+}
+
+.Light {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--light-primary);
+    color: var(--primary-black);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+
+button:hover.Light { 
+    background-color: transparent;
+    border: 3px solid var(--light-primary);
+    color:#A9A9A9;
+}
+
+.Dark {
+    width: 100px;
+    padding: 10px;
+    background-color: var(--dark-primary);
+    color: var(--primary-white);
+    border-radius: 25px;
+    text-align: center;
+    transition: 1000ms;
+}
+
+
+button:hover.Dark { 
+    background-color: transparent;
+    border: 3px solid var(--dark-primary);
+    color: var(--primary-black);
+}
+
+/*------------Link Styles--------------- */
+
+a {
+    color: #2F56B0;
+    position: relative;
+    text-decoration: none;
+    transition: color .4 ease-out;
+    font-size: 14pt;
+}
+// a:link {
+//     color: red;
+//     font-size: 22pt;
+//     text-decoration: none;  
+//     position: relative;
+// }
+
+a::after{
+    border-radius: 1em;
+    border-top: .1em solid #2F56B0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 100%;
+    transition: right .4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+a:hover::after {
+    right: 0;
+    left: 0;
+}
+
+a:visited {
+    color: green;
+   
+}
+
+
+
+a:hover {
+    text-decoration: none;
+
+}
+
+a:active {
+    color: blue;
+    font-size: 1em;
+    border: 1px solid purple;
+}
+
+
+/*------------Form Styles--------------- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    border: 0.5px solid #1583B6;
+    padding: 0.5em;
+    border-radius: 20px;
+    border-width: 1px;
+    outline: none !important;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+input[type=password]:focus, 
+textarea:focus {
+    border: 0.5px solid tomato;
+    border-radius: 20px;
+    border-width: 1px;
+    margin: 1em;
+}
+
+::placeholder {
+    color: #333;
+    font-size: 8pt;
+    opacity: 0.4;
+    text-align: center;
+  }
+input[type=submit]{
+    align-self: flex-end;
+    color: white;
+    background-color: #1583B6;
+    border-radius: 20px;
+    border: none;
+    padding: 1em;
+    transition: 600ms;
+}
+
+input[type=submit]:hover{
+    align-self: flex-end;
+    color: black;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #1583B6;
+}

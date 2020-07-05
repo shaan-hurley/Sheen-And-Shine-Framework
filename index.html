@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 	<title>Sheen & Shine CSS</title>
 	
 </head>
@@ -33,7 +33,7 @@
 			<h6>H6 Heading</h6>
 
 			<pre>
-				<code>
+				<code
 &lt;h1&gt;Headings&lt;/h1&gt;
 &lt;h1&gt;H1 Heading&lt;/h1&gt;
 &lt;h2&gt;H2 Heading&lt;/h2&gt;
@@ -42,6 +42,10 @@
 &lt;h5&gt;H5 Heading&lt;/h5&gt;
 &lt;h6&gt;H6 Heading&lt;/h6&gt;
 				</code>
+
+			<h1 style="">Strong Heading </h1>
+
+
 			</pre>
 		</section>
 		
@@ -161,29 +165,24 @@
 
 
 		<section id="colors">
-			<h1>Colors</h1>
-			<div class="color-grid">
-				
-				<div style="background-color: var(--color-background)">--color-background</div>
-				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
-				
-				<div style="background-color: var(--color-light)">--color-light</div>
-				
-				<div style="background-color: var(--color-md-light)">--color-md-light</div>
-				
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
-				
-				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
-				
-				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
-				
-				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
-				
-				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
-				
-				<div style="background-color: var(--color-callout)">--color-callout</div>
-				<div style="background-color: var(--color-lightest)">--color-lightest</div>
+			<h1 style="text-align: center;">Colors</h1>
+			<div class="container-color">
+				<div class="color-grid">
+					<div style="background-color: var(--color-background)">--color-background</div>
+					<div style="background-color: var(--color-foreground);">--color-foreground</div>
+					<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
+					<div style="background-color: var(--color-light)">--color-light</div>
+					<div style="background-color: var(--color-md-light)">--color-md-light</div>
+					<div style="background-color: var(--color-md-dark); color: var(--font-color-primary)">--color-md-dark</div>
+				</div>
+				<div class="color-grid-2">
+					<div style="background-color: var(--color-primary); color: var(--font-color-primary)">--color-primary</div>
+					<div style="background-color: var(--color-info); color: var(--font-color-primary)">--color-info</div>
+					<div style="background-color: var(--color-success); color: var(--font-color-primary)">--color-success</div>
+					<div style="background-color: var(--color-danger); color: var(--font-color-primary)">--color-danger</div>
+					<div style="background-color: var(--color-callout)">--color-callout</div>
+					<div style="background-color: var(--color-lightest)">--color-lightest</div>
+				</div>
 			</div>
 		</section>
 		
@@ -571,7 +570,7 @@
 		</ul>
 	</div>
 
-	<script src="./js/frmwrk-slides.js"></script>
-	<script src="./js/frmwrk-slides-2.js"></script>
+	<!-- <script src="./js/frmwrk-slides.js"></script>
+	<script src="./js/frmwrk-slides-2.js"></script> -->
 </body>
 </html>
