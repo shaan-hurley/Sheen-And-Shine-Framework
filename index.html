@@ -1,7 +1,6 @@
 <html>
 <head>
 	<link rel="stylesheet" href="./styles/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Sleek</title>
 	
 </head>
@@ -16,9 +15,10 @@
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
 			<li><a href="#type">Type</a></li>
-			<li><a href="#forms">forms</a>
+			<li><a href="#buttons">Buttons</a></li>
+			<li><a href="#forms">Forms</a></li>
 			<li><a href="#footer">Footer</a></li>
-			<li><a href="link/to/your/framework/repo">GitHub</a></li>
+			<li><a href="https://github.com/shaannessy25/Sheen-And-Shine-Framework">GitHub</a></li>
 		</ul>
 		
 	</div>
@@ -61,7 +61,7 @@
 &lt;h1 class="display-6"&gt;H1 Heading&lt;/h1&gt;
 			</code>
 		</pre>
-		<h1 style="">Strong Heading </h1>
+		<!-- <h1 style="strong;">Strong Heading </h1> -->
 			
 		</section>
 		
@@ -81,7 +81,7 @@
 			</pre>
 		</section>
 		
-		<section id="forms">
+		<section id="buttons">
 			<h2>Buttons</h2>
 						
 			<button>Primary</button>
@@ -136,46 +136,77 @@
 			<p>This <a href="#">paragraph</a> contains a couple <a href="#">links</a> to show off their styles in context.</p>
 		</section>
 
-		<section>
+		<section id="forms">
 			<h2>Forms and controls</h2>
 			<form>
 				<label>
-					<span>Text:</span>
+					<span>Username</span>
 					<input type="text" placeholder="What is your name?">
 				</label>
 
 				<label>
-					<span>Email:</span>
-					<input type="email" placeholder="What is your name?">
+					<span>Email</span>
+					<input type="email" placeholder="What is your email address?">
 				</label>
 
 				<label>
-					<span>Password:</span>
-					<input type="password" placeholder="What is your name?">
+					<span>Password</span>
+					<input type="password" placeholder="What is your password?">
 				</label>
 
 				<label>
 					<span>Your comments</span>
-					<textarea placeholder="Your comment"></textarea>
+					<textarea placeholder="Message"></textarea>
 				</label>
 				
 				<input type="submit">
 				<!-- Switch with Click -->
-				<div>
-					<label id="switch-2" class="switch-2">
-						<input type="checkbox">
-						<div>
-							<div></div>
+				<div class="checkbox-container">
+					<div>
+						<div class="toggle-btn" onclick="this.classList.toggle('active')">
+							<div class="inner-circle"></div>
 						</div>
-					</label>
-					<span>Click Switch no JS</span>
-				</div>
+					</div>
 
-				<label class="control-checkbox">One
-					<input type="checkbox" checked="checked">
-					<span></span>
-				</label>
+					<label class="control-checkbox">
+						Checkbox
+						<input type="checkbox" checked="checked">
+						<span class="checkmark"></span>
+					</label>
+				</div>
 			</form>
+			<pre>
+				<code>
+&lt;form&gt;
+	&lt;label&gt;
+		&lt;span&gt;Username&lt;/span&gt;
+		&lt;input type=&quot;text&quot; placeholder=&quot;What is your name?&quot;&gt;
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;span&gt;Email&lt;/span&gt;
+		&lt;input type=&quot;text&quot; placeholder=&quot;What is your email?&quot;&gt;
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;span&gt;Password&lt;/span&gt;
+		&lt;input type=&quot;text&quot; placeholder=&quot;What is your password?&quot;&gt;
+	&lt;/label&gt;
+
+	&lt;label&gt;
+		&lt;span&gt;Your Comments&lt;/span&gt;
+		&lt;textarea&gt;placeholder=&quot;Message&quot;&lt;/textarea&gt;
+	&lt;/label&gt;
+	&lt;input type=&quot;submit&quot;&gt;
+
+	&lt;label class=&quot;control-checkbox&quot;&gt;
+		Checkbox
+		&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;
+		&lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt;
+	&lt;/label&gt;	
+&lt;/form&gt;	
+				</code>
+			</pre>
 		</section>
 
 
@@ -393,33 +424,34 @@
 		</section>
 		<pre class="code-block">
 				<code>
-			&lt;div class=&quot;card-1&quot;&gt;
-				&lt;div&gt;
-					&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
-				&lt;/div&gt;
-				&lt;div&gt;
-					&lt;h1&gt;John Doe&lt;/h1&gt;
-					&lt;p&gt;Engineer&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
+&lt;div class=&quot;card-1&quot;&gt;
+	&lt;div&gt;
+		&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
+	&lt;/div&gt;
+	&lt;div&gt;
+		&lt;h1&gt;John Doe&lt;/h1&gt;
+		&lt;p&gt;Engineer&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
-			&lt;div class=&quot;card-2&quot;&gt;
-				&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
-				&lt;h1&gt;John Doe &lt;/h1&gt;
-				&lt;p&gt;Software Developer&lt;/p&gt;
-				&lt;h1&gt;John Doe&lt;/h1&gt;
-				&lt;p&gt;Engineer&lt;/p&gt;
-				&lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/p&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;card-3&quot;&gt;
-				&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
-				&lt;h4&gt;&lt;b&gt;John Doe&lt;/b&gt;&lt;/h4&gt;
-				&lt;p&gt;Software Developer&lt;/p&gt;
-			&lt;/div&gt;
+&lt;div class=&quot;card-2&quot;&gt;
+	&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
+	&lt;h1&gt;John Doe &lt;/h1&gt;
+	&lt;p&gt;Software Developer&lt;/p&gt;
+	&lt;h1&gt;John Doe&lt;/h1&gt;
+	&lt;p&gt;Engineer&lt;/p&gt;
+	&lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;card-3&quot;&gt;
+	&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
+	&lt;h4&gt;&lt;b&gt;John Doe&lt;/b&gt;&lt;/h4&gt;
+	&lt;p&gt;Software Developer&lt;/p&gt;
+&lt;/div&gt;
 			</code>
 </pre>
 		
-		<section id="footers">
+		<section id="footer">
 			<h2>Page Footer</h2>
 			<div class="page-footer">
 				<ul>

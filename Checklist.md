@@ -16,7 +16,7 @@ Your CSS framework should support the following features. Use this checklist to 
   - [ ] **Stretch:** Add color classes. Follow the example set by [Bootstrap colors](https://getbootstrap.com/docs/4.5/utilities/colors/#color)
 - [Button styles](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-05.md#design-a-button) for warning, info, action, etc.
   - [x] Basic button styles
-  - [] Alternate button styles: warning, secondary, success, Danger, info, light, and dark. 
+  - [x] Alternate button styles: warning, secondary, success, Danger, info, light, and dark. 
   - [x] document your buttons
 - [Form Elements](https://github.com/Make-School-Courses/FEW-2.2-Web-Design-and-Advanced-CSS/blob/master/lessons/lesson-06.md#challenge) 
   - [ ] Styled inputs and textarea
