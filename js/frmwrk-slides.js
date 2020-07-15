@@ -1,10 +1,9 @@
 	// Create a template
-	const template = document.createElement('template')
+	const template= document.createElement('template')
 	// Set the content of the template
   template.innerHTML = `
     <style>
       .container {
-        border: 3px solid;
         overflow: hidden;
       }
 
@@ -20,7 +19,7 @@
   
 // Creates a simple slideshow
 
-class SimpleSlides extends HTMLElement {
+class Slides1 extends HTMLElement {
   constructor() {
     super() 
 
@@ -31,7 +30,7 @@ class SimpleSlides extends HTMLElement {
     this._transition = this.getAttribute('transition')
 
     // Create a shadow root node
-    const tempNode = template.content.cloneNode(true)
+    const tempNode = template.content.cloneNode(true);
     this.appendChild(tempNode)
 
     // Create a couple elements to manage slides
@@ -107,4 +106,4 @@ class SimpleSlides extends HTMLElement {
   }
 }
 
-customElements.define('frmwrk-slides', SimpleSlides)
+customElements.define('frmwrk-slides', Slides1)

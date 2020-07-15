@@ -1,26 +1,26 @@
 
 // Create a template
-const template = document.createElement('template')
+const plate = document.createElement('template')
 // Set the content of the template
-template.innerHTML = `
+plate.innerHTML = `
   <style>
-    .container {
+    .container-slides {
       border: 3px solid;
       overflow: hidden;
     }
-    .inner {
+    .inner-slides {
       display: flex;
       transition: 400ms;
     }
   </style>
-  <div class="container">
-    <div class="inner"></div>
+  <div class="container-slides">
+    <div class="inner-slides"></div>
   </div>
 `
   
 // Creates a simple slideshow
 
-class SimpleSlides extends HTMLElement {
+class Sldies2 extends HTMLElement {
   constructor() {
     super() 
 
@@ -32,21 +32,21 @@ class SimpleSlides extends HTMLElement {
 
 
     // Create a shadow root node
-    const tempNode = template.content.cloneNode(true)
+    const tempNodes = template.content.cloneNode(true)
 		this._shadowRoot = this.attachShadow({ mode: 'open' });
-		this._shadowRoot.appendChild(tempNode)
+		this._shadowRoot.appendChild(tempNodes)
 
 
 
 
 
     // Create a couple elements to manage slides
-    this._container = this._shadowRoot.querySelector('.container')
+    this._container = this._shadowRoot.querySelector('.container-slides')
     // Add some styles
     this._container.style.width = this._width + 'px'
     this._container.style.height = this._height + 'px'
 
-    this._inner = this._shadowRoot.querySelector('.inner')
+    this._inner = this._shadowRoot.querySelector('.inner-slides')
 
     // Get array of images
     this._imgs = Array.from(this.querySelectorAll('img'))
@@ -113,10 +113,6 @@ class SimpleSlides extends HTMLElement {
   }
 }
 
-customElements.define('frmwrk-slides-2', SimpleSlides)
+customElements.define('frmwrk-slides-2', Sldies2)
 
 
-
-// Web Component - Shadow DOM has Shadows
-
-// Custom Element - No Shadows Shadow Free
