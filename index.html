@@ -1,24 +1,26 @@
 <html>
 <head>
-    <link rel="stylesheet" href="./styles/style.css">
-	<title>Sheen & Shine CSS</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Sleek</title>
 	
 </head>
 <body>
-	
+	<!-- <div class="logo">
+		S
+	</div> -->
 	<div class="navbar">
+		<h1 class="title">Sleek</h1>
 		<ul>
-			<li><h1 class="title">Sheen & Shine CSS Framework</h1></li>
 			<li><a href="#colors">Colors</a></li>
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
 			<li><a href="#type">Type</a></li>
 			<li><a href="#forms">forms</a>
 			<li><a href="#footer">Footer</a></li>
-		</ul>
-		<ul>
 			<li><a href="link/to/your/framework/repo">GitHub</a></li>
 		</ul>
+		
 	</div>
 
   <div class="container">
@@ -210,11 +212,14 @@
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-					<li><a href="#">Link 4</a></li>
 				</ul>
+						<ul>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+						</ul>
+				
 			</div>
 
 			<div>
@@ -351,8 +356,68 @@
 
 
 		</section>
-		
-		
+		<h2>Cards</h2>
+		<section id="cards">
+			
+			<div class="card-1">
+				<div>
+					<div>
+						<img src="https://via.placeholder.com/300" alt="default image">
+					</div>
+					<div>
+						<h1>John Doe</h1>
+						<p>Engineer</p>
+					</div>
+				</div>
+				<span>Card 1</span>
+			</div>
+			<div>
+				<div class="card-2">
+					<img src="https://via.placeholder.com/150" alt="default image">
+					<h1>John Doe</h1>
+					<p class="title">Software Developer</p>
+					<p>Make School University</p>
+					<p><button>Contact</button></p>
+				</div>
+				<span>Card 2</span>
+			</div>
+			<div>
+				<div class="card-3">
+					<img src="https://via.placeholder.com/300" alt="default img">
+					<h4><b>John Doe</b></h4>
+					<p>Software Developer</p>
+				</div>
+				<span>Card 3</span>
+			</div>	
+
+		</section>
+		<pre class="code-block">
+				<code>
+			&lt;div class=&quot;card-1&quot;&gt;
+				&lt;div&gt;
+					&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
+				&lt;/div&gt;
+				&lt;div&gt;
+					&lt;h1&gt;John Doe&lt;/h1&gt;
+					&lt;p&gt;Engineer&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;card-2&quot;&gt;
+				&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
+				&lt;h1&gt;John Doe &lt;/h1&gt;
+				&lt;p&gt;Software Developer&lt;/p&gt;
+				&lt;h1&gt;John Doe&lt;/h1&gt;
+				&lt;p&gt;Engineer&lt;/p&gt;
+				&lt;p&gt;&lt;button&gt;Contact&lt;/button&gt;&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;card-3&quot;&gt;
+				&lt;img src=&quot;https://via.placeholder.com/300&quot;&gt;
+				&lt;h4&gt;&lt;b&gt;John Doe&lt;/b&gt;&lt;/h4&gt;
+				&lt;p&gt;Software Developer&lt;/p&gt;
+			&lt;/div&gt;
+			</code>
+</pre>
 		
 		<section id="footers">
 			<h2>Page Footer</h2>
@@ -390,28 +455,58 @@
 				</code></pre>
 
 				<div>
+					<!-- <div class="carousel">
+						<button class="carousel_button carousel_button--left">
+							<img src="./images/arrow-left.png" alt="left-arrow">
+						</button>
+						<div class="carousel_track-container">
+							<ul class="carousel_track">
+								<li class="carousel_slide">
+									<img src="https://via.placeholder.com/150" alt="">
+								</li>
+								<li class="carousel_slide">
+									<img src="https://via.placeholder.com/150" alt="">
+								</li>
+								<li class="carousel_slide">
+									<img src="https://via.placeholder.com/150" alt="">
+								</li>
+							</ul>
+						</div>
+						<button class="carousel_button carousel_button--right">
+							<img src="./images/arrow-right.png" alt="right-arrow">
+						</button>
+						<div class="carousel_nav">
+							<button class="carousel_indicator"></button>
+							<button class="carousel_indicator"></button>
+							<button class="carousel_indicator"></button>
+						</div>
+					</div> -->
 					<div style="margin:2em">
-						<frmwrk-slides time="5000">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
+						<frmwrk-slides time="5000" transition="300" width="259" height="183">
+							<img src="./images/slide-1.jpg" width="259" height="194">
+							<img src="./images/slide-2.jpg" width="257" height="196">
+							<img src="./images/slide-3.jpg" width="259" height="194">
+							<!-- <img src="./images/kitten-3.jpeg" width="275" height="183">
 							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
+							<img src="./images/kitten-5.jpeg" width="275" height="183"> -->
 						</frmwrk-slides>
 					</div>
 					<div style="margin:2em">
 						<frmwrk-slides-2 time="5000" style="width:257px; height:183;">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
+							<img src="./images/slide-1.jpg" width="259" height="194">
+							<img src="./images/slide-2.jpg" width="257" height="196">
+							<img src="./images/slide-3.jpg" width="259" height="194">
+							<!-- <img src="./images/kitten-0.jpeg" width="259" height="194">
 							<img src="./images/kitten-1.jpeg" width="257" height="196">
 							<img src="./images/kitten-2.jpeg" width="259" height="194">
 							<img src="./images/kitten-3.jpeg" width="275" height="183">
 							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
+							<img src="./images/kitten-5.jpeg" width="275" height="183"> -->
 						</frmwrk-slides-2>
 					</div>
+					<!-- vewrtical style="width:257px; height:183;" -->
 					<div style="margin:2em">
-						<frmwrk-slides-2 time="5000" vertical style="width:257px; height:183;">
+						<frmwrk-slides-2 time="5000"  transition="200" width="259" height="183">
 							<img src="./images/kitten-0.jpeg" width="259" height="194">
 							<img src="./images/kitten-1.jpeg" width="257" height="196">
 							<img src="./images/kitten-2.jpeg" width="259" height="194">
@@ -584,7 +679,7 @@
 		</ul>
 	</div>
 
-	<!-- <script src="./js/frmwrk-slides.js"></script>
-	<script src="./js/frmwrk-slides-2.js"></script> -->
+	<script src="./js/frmwrk-slides.js"></script>
+	<script src="./js/frmwrk-slides-2.js"></script> 
 </body>
 </html>
