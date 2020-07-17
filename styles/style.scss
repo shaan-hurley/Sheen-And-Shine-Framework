@@ -431,13 +431,14 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     margin-left: 10px;
 }
+
 form > label {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-content: center;
+    align-items: stretch;
     // margin-left: 10px;
 }
 
@@ -457,7 +458,7 @@ textarea {
     font-size: 12pt;
     padding: 1.5em;
     border-radius: 20px;
-    max-width: 50%;
+    // max-width: 50%;
     outline: none !important;
 }
 
@@ -482,6 +483,7 @@ input[type=submit]{
     border: none;
     margin: 10px 0;
     padding: 1em 1.5em;
+    align-self: flex-end;
     transition: 600ms;
 }
 
